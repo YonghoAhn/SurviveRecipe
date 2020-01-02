@@ -13,11 +13,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Gradle
-      run: sudo ./gradlew build
-    - name: Add Credentials-Username
-      run: git config --global user.name "YonghoAhn"
-    - name: Add Credentials-Email
-      run: git config --global user.email "hrh1110@naver.com"
     - name: Debug APK Publisher
       run: ./gradlew assembleDebug
