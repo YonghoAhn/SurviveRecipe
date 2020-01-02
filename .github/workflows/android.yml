@@ -20,4 +20,4 @@ jobs:
     - name: Add Credentials-Email
       run: git config --global user.email "hrh1110@naver.com"
     - name: Debug APK Publisher
-      uses: ShaunLWM/action-release-debugapk@0.0.5
+      run: ./gradlew assembleDebug
