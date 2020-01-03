@@ -1,5 +1,6 @@
 package moe.misakachan.surviverecipe
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
