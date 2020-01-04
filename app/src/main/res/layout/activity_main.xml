@@ -8,28 +8,32 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button"
-        android:theme="@style/logintoemail"
-        android:layout_width="250dp"
+        style="@style/BaseButton"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/login_to_email"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
-        android:layout_width="250dp"
+        style="@style/logintofacebook"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/login_to_facebook"
         android:textAlignment="center"
         android:theme="@style/logintofacebook"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -59,9 +63,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="703dp"
-        android:layout_marginBottom="316dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
