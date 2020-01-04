@@ -1,11 +1,25 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="logintoemail" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="cornerRadius">40dp</item>
+    </style>
+    <style name="logintofacebook" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:colorButtonNormal">@color/colorFacebook</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="cornerRadius">40dp</item>
     </style>
 
 </resources>

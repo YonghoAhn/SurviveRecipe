@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SurviveRecipe</string>
+    <string name="login_to_facebook">facebook으로 로그인</string>
+    <string name="login_to_email">이메일로 로그인</string>
+    <string name="welcome1">환영합니다!</string>
+    <string name="welcome2">다시 만나서 반갑습니다!</string>
+    <string name="runot_member">회원이 아니신가요?</string>
+    <string name="sign_up">회원가입</string>
+    <string name="need_help">도움이 필요하신가요?</string>
+    <string name="find_user">아아디/비밀번호 찾기</string>
 </resources>
