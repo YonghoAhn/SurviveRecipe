@@ -14,37 +14,77 @@
        android:layout_marginStart="10dp"
        android:layout_marginEnd="10dp"
        android:layout_marginTop="20dp"
-       android:orientation="vertical">
+       android:orientation="vertical"
+       >
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="뿌슝빠슝"
-           android:textSize="30dp"/>
+           android:text="한줄소개"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="뿌슝빠슝"
-           android:textSize="20dp"/>
+           android:text="@string/soge"
+           android:textSize="18dp"
+           android:textColor="@color/colorBlack"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="뿌슝빠슝"
-           android:textSize="30dp"/>
+           android:text="재료"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="뿌슝빠슝"
-           android:textSize="20dp"/>
+           android:text="두부 1모"
+           android:textSize="18dp"
+           android:textColor="@color/colorBlack"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="뿌슝빠슝"
-           android:textSize="30dp"/>
+           android:text="요리법"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/button1"
+           style="@style/logintoemail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:backgroundTint="@color/colorPrimary"
+           android:text="@string/watch_with_video"
+           android:textAlignment="center"
+           app:strokeColor="@color/colorPrimary" />
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/button2"
+           style="@style/logintoemail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:backgroundTint="@color/colorPrimary"
+           android:text="@string/watch_only_photo"
+           android:textAlignment="center"
+           app:strokeColor="@color/colorPrimary" />
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="뿌슝빠슝"
-           android:textSize="20dp"/>
+           android:text="게시자"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/button3"
+           style="@style/logintoemail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:backgroundTint="@color/colorPrimary"
+           android:text="@string/watch_cook_profile"
+           android:textAlignment="center"
+           app:strokeColor="@color/colorPrimary" />
    </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
