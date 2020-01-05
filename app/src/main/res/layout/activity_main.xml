@@ -8,7 +8,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button"
-        android:theme="@style/logintoemail"
+        style="@style/logintoemail"
+        android:backgroundTint="@color/colorPrimary"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -28,7 +29,8 @@
         android:layout_marginBottom="120dp"
         android:text="@string/login_to_facebook"
         android:textAlignment="center"
-        android:theme="@style/logintofacebook"
+        android:backgroundTint="@color/colorFacebook"
+        style="@style/logintofacebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

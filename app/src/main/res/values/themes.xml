@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="facebook" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="colorButtonNormal">@color/colorFacebook</item>
+    </style>
+    <style name="inputTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#FFFFFF</item>
+        <item name="boxStrokeWidth">10dp</item>
+    </style>
 </resources>
