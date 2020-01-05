@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RecipeMainActivity"
+    tools:showIn="@layout/activity_recipe_main">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginStart="10dp"
+       android:layout_marginEnd="10dp"
+       android:layout_marginTop="20dp"
+       android:orientation="vertical"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="한줄소개"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/soge"
+           android:textSize="18dp"
+           android:textColor="@color/colorBlack"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="재료"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="두부 1모"
+           android:textSize="18dp"
+           android:textColor="@color/colorBlack"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="요리법"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/button1"
+           style="@style/logintoemail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:backgroundTint="@color/colorPrimary"
+           android:text="@string/watch_with_video"
+           android:textAlignment="center"
+           app:strokeColor="@color/colorPrimary" />
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/button2"
+           style="@style/logintoemail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:backgroundTint="@color/colorPrimary"
+           android:text="@string/watch_only_photo"
+           android:textAlignment="center"
+           app:strokeColor="@color/colorPrimary" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="게시자"
+           android:textSize="24dp"
+           android:textColor="@color/colorBlack"/>
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/button3"
+           style="@style/logintoemail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:backgroundTint="@color/colorPrimary"
+           android:text="@string/watch_cook_profile"
+           android:textAlignment="center"
+           app:strokeColor="@color/colorPrimary" />
+   </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

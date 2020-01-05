@@ -15,5 +15,12 @@
     <string name="email_addr">이메일 주소</string>
     <string name="password">비밀번호</string>
     <string name="password_confirm">비밀번호 확인</string>
+    <string name="login">로그인</string>
+    <string name="title_activity_recipe_main">RecipeMainActivity</string>
+    <string name="soge">중국 사천지방을 대표하는 마파두부는 얼굴에 얽은 자국이 있었던 할머니가 만들어낸 음식이다. 둘이 먹다 한명 죽어도 모르게 맛있고, 신부가 특히 좋아한다.</string>
+    <string name="action_settings">Settings</string>
+    <string name="watch_with_video">영상과 함께 보기</string>
+    <string name="watch_only_photo">사진만 보기</string>
+    <string name="watch_cook_profile">님의 프로필 보기</string>
     <string name="signin_email">이메일로 회원가입</string>
 </resources>
