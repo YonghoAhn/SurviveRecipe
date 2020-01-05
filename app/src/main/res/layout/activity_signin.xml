@@ -17,23 +17,25 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:toolbarId="@+id/toolbar"
-            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
-
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:collapsedTitleTextAppearance="@style/ToolbarTextAppearance"
+            app:expandedTitleTextAppearance="@style/ToolbarTextAppearance"
             app:contentScrim="?attr/colorPrimary">
-
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
+                app:title="@string/signin_email"
+                app:navigationIcon="?attr/homeAsUpIndicator"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
+                android:layout_width="match_parent">
+
+            </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -100,7 +102,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:text="@string/login_to_email"
+                android:text="@string/sign_up"
                 android:textAlignment="center"
                 android:theme="@style/logintoemail"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -184,6 +186,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
+                android:layout_marginTop="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

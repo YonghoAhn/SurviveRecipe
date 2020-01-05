@@ -133,6 +133,11 @@
         <item name="fontFamily">@font/noto_sans</item>
     </style>
 
+    <style name="ToolbarTextAppearance">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/noto_sans</item>
+    </style>
+
     <style name="BaseButton" parent="Widget.MaterialComponents.Button">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
