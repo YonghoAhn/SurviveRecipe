@@ -7,7 +7,7 @@
     <string name="runot_member">회원이 아니신가요?</string>
     <string name="sign_up">회원가입</string>
     <string name="need_help">도움이 필요하신가요?</string>
-    <string name="find_user">아아디/비밀번호 찾기</string>
+    <string name="find_user">아이디/비밀번호 찾기</string>
     <string name="sign_in_to_email">이메일로 회원가입</string>
     <string name="watch_personal_info_agreement">개인정보 처리방침 및 약관보기</string>
     <string name="caution_personal_info_agreement">회원가입 시 약관에 동의한 것으로 간주됩니다.</string>

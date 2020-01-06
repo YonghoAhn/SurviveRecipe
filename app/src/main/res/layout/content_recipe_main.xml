@@ -20,20 +20,23 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="한줄소개"
-           android:textSize="24dp"
-           android:textColor="@color/colorBlack"/>
+           android:layout_marginBottom="@dimen/margin_small"
+           style="@style/TextAppearance.SurviveRecipe.Headline5"
+           />
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="@string/soge"
-           android:textSize="18dp"
+           android:paddingStart="@dimen/margin_small"
+           android:layout_marginBottom="@dimen/margin_small"
+           style="@style/TextAppearance.SurviveRecipe.Body1"
            android:textColor="@color/colorBlack"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="재료"
-           android:textSize="24dp"
-           android:textColor="@color/colorBlack"/>
+           style="@style/TextAppearance.SurviveRecipe.Headline5"
+           />
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
