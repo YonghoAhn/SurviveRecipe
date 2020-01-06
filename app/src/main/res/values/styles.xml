@@ -1,36 +1,156 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorWhite</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryDark</item>
+        <item name="colorOnSecondary">@color/colorBlack</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SurviveRecipe.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SurviveRecipe.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SurviveRecipe.LargeComponent</item>
+
+        <item name="textAppearanceHeadline1">@style/TextAppearance.SurviveRecipe.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.SurviveRecipe.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.SurviveRecipe.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.SurviveRecipe.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.SurviveRecipe.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.SurviveRecipe.Headline6</item>
+
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.SurviveRecipe.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.SurviveRecipe.Subtitle2</item>
+
+        <item name="textAppearanceBody1">@style/TextAppearance.SurviveRecipe.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.SurviveRecipe.Body2</item>
+
+        <item name="textAppearanceCaption">@style/TextAppearance.SurviveRecipe.Caption</item>
+
+        <item name="textAppearanceButton">@style/TextAppearance.SurviveRecipe.Button</item>
+
+        <item name="textAppearanceOverline">@style/TextAppearance.SurviveRecipe.Overline</item>
+
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="materialButtonStyle">@style/BaseButton</item>
     </style>
 
-    <style name="logintoemail" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="colorButtonNormal">@color/colorPrimary</item>
+    <style name="ShapeAppearance.SurviveRecipe.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SurviveRecipe.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">36dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SurviveRecipe.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">36dp</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">72sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">64sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.SurviveRecipe.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="ToolbarTextAppearance">
         <item name="android:textColor">@color/colorWhite</item>
-        <item name="cornerRadius">20dp</item>
+        <item name="fontFamily">@font/noto_sans</item>
     </style>
 
-    <style name="logintofacebook" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="android:colorAccent">@color/colorFacebook</item>
-        <item name="android:colorButtonNormal">@color/colorFacebook</item>
+    <style name="BaseButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="logintoemail" parent="BaseButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorWhite</item>
-        <item name="cornerRadius">20dp</item>
     </style>
 
-    <style name="input" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-        <item name="android:textColor">#000000</item>
-        <item name="android:padding">10dp</item>
-        <item name="boxBackgroundColor">@color/colorGraylight</item>
-        <item name="boxStrokeColor">#FFFFFF</item>
-        <item name="boxStrokeWidth">0dp</item>
-        <item name="boxCornerRadiusBottomStart">20dp</item>
-        <item name="boxCornerRadiusBottomEnd">20dp</item>
-        <item name="boxCornerRadiusTopStart">20dp</item>
-        <item name="boxCornerRadiusTopEnd">20dp</item>
+    <style name="logintofacebook" parent="BaseButton">
+        <item name="backgroundTint">@color/colorFacebook</item>
+        <item name="android:textColor">@color/colorWhite</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -42,4 +162,10 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="input" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColor">#000000</item>
+        <item name="boxBackgroundColor">@color/colorLightGray</item>
+        <item name="boxStrokeColor">#FFFFFF</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
 </resources>
