@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textview_mainActi_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -28,6 +28,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/input"
+            android:id="@+id/inputlayout_mainActi_Search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -37,14 +38,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12">
+            app:layout_constraintTop_toBottomOf="@+id/textview_mainActi_title">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:drawableStart="@drawable/ic_search_black_24dp"
-                android:drawableTint="@color/colorBlack" />
+                android:drawableStart="@drawable/ic_search_black_24dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,17 +58,17 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+            android:id="@+id/fab_main_addrecipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorSecondaryLight"
             android:src="@drawable/ic_favorite_heart_button"
             android:clickable="true"
             android:focusable="true"
-            app:layout_anchor="@id/bar" />
+            app:layout_anchor="@id/bottomappbar_mainActi" />
 
         <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bar"
+            android:id="@+id/bottomappbar_mainActi"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_gravity="bottom"
@@ -76,17 +76,6 @@
             app:fabAlignmentMode="end"
             app:menu="@menu/navigation" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigation"
-            android:layout_width="81dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="#00000000"
-            app:itemIconSize="40sp"
-            app:itemIconTint="@color/colorWhite"
-            app:itemTextColor="@color/colorPrimary"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/navigation" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -96,6 +85,7 @@
         android:layout_height="575dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

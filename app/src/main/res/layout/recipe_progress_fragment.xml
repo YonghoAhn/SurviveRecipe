@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RecipeProgressFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_recipeProgress_video"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/mapatofu"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        </androidx.appcompat.widget.AppCompatImageView>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_recipeProgress_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.SurviveRecipe.Headline5"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_anchor="@id/imageview_recipeProgress_video"
+            app:layout_anchorGravity="bottom|left|end"
+            android:text="1단계"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_extra_large"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_recipeProgress_prev"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:backgroundTint="@color/colorSecondary"
+            android:textColor="@color/colorBlack"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_recipeProgress_next"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

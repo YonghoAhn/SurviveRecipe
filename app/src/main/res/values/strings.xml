@@ -26,4 +26,10 @@
     <string name="recipe">레시피</string>
     <string name="signin_email">이메일로 회원가입</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filter">필터</string>
+    <string name="author">게시자</string>
+    <string name="category">종류</string>
+    <string name="search_result">검색결과</string>
+    <string name="next">다음</string>
+    <string name="previous">이전</string>
 </resources>

@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textview_customlistitem_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="디너"
@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textview_customlistitem_more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -25,11 +26,12 @@
         style="@style/TextAppearance.SurviveRecipe.Caption"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_customlistitem_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textview_customlistitem_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

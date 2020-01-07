@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".RecipeMainActivity"
-    tools:showIn="@layout/activity_recipe_main">
+    tools:context=".RecipeInfoFragment"
+    tools:showIn="@layout/fragment_recipe_info">
 
    <LinearLayout
        android:layout_width="match_parent"
@@ -24,6 +24,7 @@
            style="@style/TextAppearance.SurviveRecipe.Headline5"
            />
        <TextView
+           android:id="@+id/textview_contentRecipeinfo_introduce"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="@string/soge"
@@ -38,10 +39,11 @@
            style="@style/TextAppearance.SurviveRecipe.Headline5"
            />
        <TextView
+           android:id="@+id/textview_contentRecipeinfo_gredient"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="두부 1모"
-           android:textSize="18dp"
+           android:textSize="18sp"
            android:textColor="@color/colorBlack"/>
        <TextView
            android:layout_width="match_parent"
@@ -50,18 +52,19 @@
            android:textSize="24dp"
            android:textColor="@color/colorBlack"/>
        <com.google.android.material.button.MaterialButton
-           android:id="@+id/button1"
+           android:id="@+id/button_contentRecipeinfo_watchWithVideo"
            style="@style/logintoemail"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:layout_marginStart="16dp"
-           android:layout_marginEnd="16dp"
+           android:layout_marginStart="@dimen/margin_medium"
+           android:layout_marginEnd="@dimen/margin_medium"
+           android:layout_marginBottom="@dimen/margin_small"
            android:backgroundTint="@color/colorPrimary"
            android:text="@string/watch_with_video"
            android:textAlignment="center"
            app:strokeColor="@color/colorPrimary" />
        <com.google.android.material.button.MaterialButton
-           android:id="@+id/button2"
+           android:id="@+id/button_contentRecipeinfo_watchOnlyPhoto"
            style="@style/logintoemail"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
@@ -78,7 +81,7 @@
            android:textSize="24dp"
            android:textColor="@color/colorBlack"/>
        <com.google.android.material.button.MaterialButton
-           android:id="@+id/button3"
+           android:id="@+id/button_contentRecipeinfo_authorprofile"
            style="@style/logintoemail"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
