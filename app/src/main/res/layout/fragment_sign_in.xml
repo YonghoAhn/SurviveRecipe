@@ -126,6 +126,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView8">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        style="@style/input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="hint" />
@@ -143,6 +144,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView10">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        style="@style/input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="hint" />
@@ -160,10 +162,11 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView9">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:inputType="textPassword"
+                        style="@style/input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="hint" />
+                        android:hint="hint"
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -178,10 +181,11 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView11">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:inputType="textPassword"
+                        style="@style/input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="hint" />
+                        android:hint="hint"
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
