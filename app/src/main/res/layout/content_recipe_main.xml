@@ -61,7 +61,7 @@
            android:textAlignment="center"
            app:strokeColor="@color/colorPrimary" />
        <com.google.android.material.button.MaterialButton
-           android:id="@+id/button2"
+           android:id="@+id/btnFacebookLogin"
            style="@style/logintoemail"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"

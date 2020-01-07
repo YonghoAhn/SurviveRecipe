@@ -11,7 +11,6 @@ import com.facebook.login.LoginResult
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_intro.*
-import java.util.*
 
 class IntroActivity : AppCompatActivity() {
 
@@ -28,6 +27,7 @@ class IntroActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         LoginManager.getInstance().registerCallback(callbackManager, object : FacebookCallback<LoginResult> {
             override fun onSuccess(result: LoginResult?) {
+                handleFacebookAccessToken(result!!.accessToken)
             }
 
             override fun onCancel() {
@@ -38,14 +38,23 @@ class IntroActivity : AppCompatActivity() {
 
         })
         setContentView(R.layout.activity_intro)
-        button2.setOnClickListener { LoginManager.getInstance().logInWithReadPermissions(this, listOf("public_profile","email")) }
+        btnFacebookLogin.setOnClickListener {
+            LoginManager.getInstance().logInWithReadPermissions(this, listOf("public_profile","email"))
+        }
+        btnEmailLogin.setOnClickListener {
+            startActivity(Intent(applicationContext,LoginActivity::class.java))
+        }
+        txtSignIn.setOnClickListener {
+            startActivity(Intent(applicationContext,SignInActivity::class.java))
+        }
         layout_intro.transitionToEnd()
-
     }
 
     override fun onStart() {
         super.onStart()
         if(firebaseAuth.currentUser!=null) {
+            startActivity(Intent(applicationContext, MainPageActivity::class.java))
+            finish()
             //Handle it
         }
     }

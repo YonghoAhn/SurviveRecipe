@@ -12,11 +12,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/button"
+            app:layout_constraintBottom_toTopOf="@id/btnEmailLogin"
             android:src="@drawable/welcome"
             />
 
-        <Constraint android:id="@+id/button"
+        <Constraint android:id="@+id/btnEmailLogin"
             android:visibility="invisible"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             />
 
-        <Constraint android:id="@+id/button2"
+        <Constraint android:id="@+id/btnFacebookLogin"
             android:visibility="invisible"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:theme="@style/logintofacebook"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/btnEmailLogin"
             />
 
         <Constraint android:id="@+id/textView"
@@ -54,13 +54,13 @@
             android:text="@string/runot_member"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/textView2"
+            app:layout_constraintEnd_toStartOf="@id/txtSignIn"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/btnFacebookLogin"
             />
 
-        <Constraint android:id="@+id/textView2" android:visibility="invisible"
+        <Constraint android:id="@+id/txtSignIn" android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -72,14 +72,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/btnFacebookLogin"
             />
 
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint android:id="@id/imageView" />
-        <Constraint android:id="@id/button" />
+        <Constraint android:id="@id/btnEmailLogin" />
     </ConstraintSet>
 
     <Transition
