@@ -11,8 +11,7 @@
         android:layout_height="wrap_content"
         android:text="디너"
         android:textColor="@color/colorBlack"
-        android:textSize="40sp"
-        android:textStyle="bold"
+        style="@style/TextAppearance.SurviveRecipe.Headline4"
         android:layout_margin="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +22,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="24dp"
         android:text="더보기"
-        android:textSize="20sp"
+        style="@style/TextAppearance.SurviveRecipe.Caption"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
