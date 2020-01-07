@@ -26,4 +26,7 @@
     <string name="recipe">레시피</string>
     <string name="signin_email">이메일로 회원가입</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">2475875292687672</string>
+    <string name="fb_login_protocol_scheme">fb2475875292687672</string>
+
 </resources>
