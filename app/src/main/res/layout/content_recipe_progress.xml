@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textview_contentRecipeProgress_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soge"
+            android:paddingStart="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            style="@style/TextAppearance.SurviveRecipe.Body1"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:id="@+id/imageview_contentRecipeProgress_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:scaleType="fitStart"
+            android:src="@drawable/mapatofu" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

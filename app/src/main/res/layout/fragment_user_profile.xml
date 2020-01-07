@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imagview_userprofile_background"
             android:layout_width="match_parent"
             android:layout_height="237dp"
             android:scaleType="fitXY"
@@ -21,44 +21,45 @@
             app:srcCompat="@drawable/mapatofu" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textview_userprofile_introduce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="한줄소개 문구입니다"
             android:textColor="@color/colorWhite"
             android:textSize="20sp"
             android:layout_margin="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintBottom_toBottomOf="@+id/imagview_userprofile_background"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
+            android:id="@+id/textview_userprofile_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="USERNAME"
             android:textColor="@color/colorWhite"
             android:layout_marginStart="10dp"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView16"
+            app:layout_constraintBottom_toTopOf="@+id/textview_userprofile_introduce"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button3"
+            android:id="@+id/button_userprofile_follow"
             style="@style/logintoemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/margin_small"
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/follow"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imagview_userprofile_background"
             android:layout_marginHorizontal="40dp"
             app:strokeColor="@color/colorPrimary" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/textview_userprofile_recipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -67,13 +68,16 @@
             android:textColor="@color/colorBlack"
             android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintTop_toBottomOf="@+id/button_userprofile_follow" />
 
-        <ListView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_userprofile_userrecipe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            app:layout_constraintTop_toBottomOf="@+id/textview_userprofile_recipe" />
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"

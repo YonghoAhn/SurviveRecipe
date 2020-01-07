@@ -12,26 +12,27 @@
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/app_bar"
+            android:id="@+id/appbar_recipeinfo_head"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:fitsSystemWindows="true"
             android:background="@drawable/mapatofu"
             android:theme="@style/AppTheme.AppBarOverlay">
             <ImageView
+                android:id="@+id/imageview_recipeinfo_thumbnail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/black_transparent_gradient"/>
             <ImageView
-                android:id="@+id/fab"
+                android:id="@+id/imageview_recipeinfo_loveit"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="-50dp"
                 android:tint="@color/colorPrimary"
                 android:layout_marginEnd="40dp"
                 android:layout_marginStart="360dp"
-                app:layout_anchor="@id/app_bar"
+                app:layout_anchor="@id/appbar_recipeinfo_head"
                 app:srcCompat="@drawable/ic_favorite_heart_button" />
 
         </com.google.android.material.appbar.AppBarLayout>
@@ -41,18 +42,20 @@
 
 
         <TextView
+            android:id="@+id/textview_recipeinfo_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_anchor="@id/app_bar"
+            app:layout_anchor="@id/appbar_recipeinfo_head"
             android:text="마파두부덮밥"
             android:textColor="@color/colorWhite"
             android:textSize="30dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="180dp"/>
         <TextView
+            android:id="@+id/textview_recipeinfo_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_anchor="@id/app_bar"
+            app:layout_anchor="@id/appbar_recipeinfo_head"
             android:text="by raingunMoe"
             android:textColor="@color/colorWhite"
             android:textSize="20dp"
@@ -65,7 +68,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_anchor="@+id/app_bar"
+            app:layout_anchor="@+id/appbar_recipeinfo_head"
             app:layout_anchorGravity="center"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">

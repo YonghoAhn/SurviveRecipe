@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="192dp"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:collapsedTitleTextAppearance="@style/ToolbarTextAppearance"
+            app:expandedTitleTextAppearance="@style/ToolbarTextAppearance"
+            app:contentScrim="?attr/colorPrimary">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="@string/signin_email"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".SignUpActivity">
+
+            <TextView
+                android:id="@+id/textview_signupActi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_signupActi_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/password"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputlayout_signupActi_email" />
+
+            <TextView
+                android:id="@+id/textview_signupActi_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/email_addr"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputLayout_signupActi_name" />
+
+            <TextView
+                android:id="@+id/textview_signupActi_passwordconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/password_confirm"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputlayout_signupActi_password" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_signupActi_signup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:text="@string/sign_up"
+                android:textAlignment="center"
+                android:theme="@style/logintoemail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.377"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputlayout_signupActi_passwordconfirm" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayout_signupActi_name"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_signupActi_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout_signupActi_email"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_signupActi_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout_signupActi_password"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_signupActi_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hint"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout_signupActi_passwordconfirm"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_signupActi_passwordconfirm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hint"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_signupActi_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_signupActi_signup">
+
+                <TextView
+                    android:id="@+id/textview_signupActi_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/caution_personal_info_agreement"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textview_signupActi_termscheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watch_personal_info_agreement"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

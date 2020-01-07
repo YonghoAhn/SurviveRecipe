@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeIngredientFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재료"
+            style="@style/TextAppearance.SurviveRecipe.Headline5"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_medium"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_recipeIngredient_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginHorizontal="@dimen/margin_medium_large"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>
