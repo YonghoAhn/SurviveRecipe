@@ -22,38 +22,35 @@
             app:popupTheme="@style/AppTheme.PopupOverlay">
         </com.google.android.material.appbar.MaterialToolbar>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_extra_large"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp">
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_recipeProgressWithoutVideo_prev"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondary"
+                android:text="@string/previous"
+                android:textColor="@color/colorBlack"
+                app:cornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_recipeProgressWithoutVideo_next"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_extra_large"
-        android:layout_margin="10dp"
-        android:layout_gravity="bottom">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_recipeProgressWithoutVideo_prev"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="@string/previous"
-            android:backgroundTint="@color/colorSecondary"
-            android:textColor="@color/colorBlack"
-            app:cornerRadius="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_recipeProgressWithoutVideo_next"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="@string/next"
-            app:cornerRadius="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
