@@ -19,6 +19,41 @@
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
+           android:text="요리 난이도"
+           android:layout_marginBottom="@dimen/margin_small"
+           style="@style/TextAppearance.SurviveRecipe.Headline5"
+           />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/imageView_contentRecipeInfo_diff1"
+               android:src="@drawable/ic_baseline_star_32"
+               android:tint="@color/colorPrimaryLight"/>
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/imageView_contentRecipeInfo_diff2"
+               android:src="@drawable/ic_baseline_star_32"/>
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/imageView_contentRecipeInfo_diff3"
+               android:src="@drawable/ic_baseline_star_32"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="쉬움"
+               android:layout_marginStart="@dimen/margin_small"
+               style="@style/TextAppearance.SurviveRecipe.Headline6"
+               />
+       </LinearLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
            android:text="한줄소개"
            android:layout_marginBottom="@dimen/margin_small"
            style="@style/TextAppearance.SurviveRecipe.Headline5"

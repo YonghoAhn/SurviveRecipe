@@ -25,4 +25,13 @@
         style="@style/TextAppearance.SurviveRecipe.Headline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/colorPrimaryLight"
+        app:layout_constraintStart_toEndOf="@+id/textview_itemIngredient_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_star_32" />
 </androidx.constraintlayout.widget.ConstraintLayout>
