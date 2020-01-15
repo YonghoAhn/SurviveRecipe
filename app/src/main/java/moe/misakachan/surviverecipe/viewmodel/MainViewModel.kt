@@ -1,4 +1,4 @@
-package moe.misakachan.surviverecipe
+package moe.misakachan.surviverecipe.viewmodel
 
 import androidx.lifecycle.ViewModel
 

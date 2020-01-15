@@ -1,7 +1,8 @@
-package moe.misakachan.surviverecipe
+package moe.misakachan.surviverecipe.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import moe.misakachan.surviverecipe.R
 
 class LoginActivity : AppCompatActivity() {
 

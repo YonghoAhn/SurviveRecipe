@@ -1,4 +1,4 @@
-package moe.misakachan.surviverecipe
+package moe.misakachan.surviverecipe.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +11,7 @@ import com.facebook.login.LoginResult
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_intro.*
+import moe.misakachan.surviverecipe.R
 
 class IntroActivity : AppCompatActivity() {
 
@@ -42,10 +43,12 @@ class IntroActivity : AppCompatActivity() {
             LoginManager.getInstance().logInWithReadPermissions(this, listOf("public_profile","email"))
         }
         btnEmailLogin.setOnClickListener {
-            startActivity(Intent(applicationContext,LoginActivity::class.java))
+            startActivity(Intent(applicationContext,
+                LoginActivity::class.java))
         }
         txtSignIn.setOnClickListener {
-            startActivity(Intent(applicationContext,SignInActivity::class.java))
+            startActivity(Intent(applicationContext,
+                SignUpActivity::class.java))
         }
         layout_intro.transitionToEnd()
     }
@@ -68,7 +71,6 @@ class IntroActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("MisakaMOE", "signInWithCredential:success")
-                    val user = firebaseAuth.currentUser
                     startActivity(Intent(applicationContext, MainPageActivity::class.java))
                     finish()
                 } else {

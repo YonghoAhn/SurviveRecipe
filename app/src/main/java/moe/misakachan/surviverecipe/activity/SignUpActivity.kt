@@ -1,21 +1,21 @@
-package moe.misakachan.surviverecipe
+package moe.misakachan.surviverecipe.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
-import kotlinx.android.synthetic.main.activity_sign_in.*
-import java.util.regex.Pattern
+import kotlinx.android.synthetic.main.activity_sign_up.*
+import moe.misakachan.surviverecipe.R
 
-class SignInActivity : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
 
     private lateinit var firebaseAuth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         firebaseAuth = FirebaseAuth.getInstance()
-        setContentView(R.layout.activity_sign_in)
+        setContentView(R.layout.activity_sign_up)
 
         setSupportActionBar(toolbarSignUp)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

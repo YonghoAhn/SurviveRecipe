@@ -1,4 +1,4 @@
-package moe.misakachan.surviverecipe
+package moe.misakachan.surviverecipe.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_login.*
+import moe.misakachan.surviverecipe.R
+import moe.misakachan.surviverecipe.activity.MainPageActivity
 
 
 /**
@@ -34,7 +36,8 @@ class LoginFragment : Fragment() {
             firebaseAuth.signInWithEmailAndPassword(txtLoginEmail.text.toString(), txtLoginPassword.text.toString()).addOnCompleteListener {
                 if(it.isSuccessful)
                 {
-                    activity!!.startActivity(Intent(context,MainPageActivity::class.java))
+                    activity!!.startActivity(Intent(context,
+                        MainPageActivity::class.java))
                     activity!!.finish()
                 }
                 else

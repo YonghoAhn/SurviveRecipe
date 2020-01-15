@@ -1,4 +1,4 @@
-package moe.misakachan.surviverecipe
+package moe.misakachan.surviverecipe.fragment
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import moe.misakachan.surviverecipe.viewmodel.MainViewModel
+import moe.misakachan.surviverecipe.R
 
 class MainFragment : Fragment() {
 

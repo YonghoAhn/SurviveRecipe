@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="moe.misakachan.surviverecipe.LoginFragment"
+        android:name="moe.misakachan.surviverecipe.fragment.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
 </navigation>

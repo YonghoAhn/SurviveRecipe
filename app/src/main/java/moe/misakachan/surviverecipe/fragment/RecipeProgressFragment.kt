@@ -1,4 +1,4 @@
-package moe.misakachan.surviverecipe
+package moe.misakachan.surviverecipe.fragment
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,11 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import moe.misakachan.surviverecipe.R
+import moe.misakachan.surviverecipe.viewmodel.RecipeProgressViewModel
 
 class RecipeProgressFragment : Fragment() {
 
     companion object {
-        fun newInstance() = RecipeProgressFragment()
+        fun newInstance() =
+            RecipeProgressFragment()
     }
 
     private lateinit var viewModel: RecipeProgressViewModel
@@ -25,7 +28,5 @@ class RecipeProgressFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(RecipeProgressViewModel::class.java)
-        // TODO: Use the ViewModel
     }
-
 }
