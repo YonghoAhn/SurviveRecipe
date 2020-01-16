@@ -10,7 +10,7 @@
     app:layoutDescription="@xml/activity_intro_scene">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_intro_logintoemail"
+        android:id="@+id/btnEmailLogin"
         style="@style/BaseButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_intro_logintofacebook"
+        android:id="@+id/btnFacebookLogin"
         style="@style/logintofacebook"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -37,10 +37,10 @@
         android:theme="@style/logintofacebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_intro_logintoemail" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEmailLogin" />
 
     <TextView
-        android:id="@+id/textview_intro_noaccount"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -48,13 +48,13 @@
         android:text="@string/runot_member"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/textview_intro_register"
+        app:layout_constraintEnd_toStartOf="@id/txtSignIn"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_intro_logintofacebook" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebookLogin" />
 
     <TextView
-        android:id="@+id/textview_intro_register"
+        android:id="@+id/txtSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -65,8 +65,8 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textview_intro_noaccount"
-        app:layout_constraintTop_toBottomOf="@+id/button_intro_logintofacebook" />
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebookLogin" />
 
 
     <ImageView
@@ -78,12 +78,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button_intro_logintoemail"
+        app:layout_constraintBottom_toTopOf="@id/btnEmailLogin"
         android:src="@drawable/welcome"
        />
 
     <TextView
-        android:id="@+id/textview_intro_welcome"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textview_intro_nice2meet"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -103,5 +103,5 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_intro_welcome" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
