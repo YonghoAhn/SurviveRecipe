@@ -10,8 +10,9 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/margin_large"
         android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/margin_large"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,20 +23,20 @@
             android:layout_marginStart="@dimen/margin_large"
             android:layout_marginTop="40dp"
             android:text="@string/one_view_worth_na_thousand_words"
-            android:textColor="@color/colorWhite"
             android:textAppearance="@style/TextAppearance.SurviveRecipe.Headline5"
+            android:textColor="@color/colorWhite"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/input"
             android:id="@+id/inputlayout_mainActi_Search"
+            style="@style/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="16dp"
             android:hint="Search here..."
             app:boxBackgroundColor="@color/colorLightGray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_gravity="bottom"
-            android:backgroundTint="@c  olor/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
             app:fabAlignmentMode="end"
             app:hideOnScroll="true"
             app:menu="@menu/navigation" />
