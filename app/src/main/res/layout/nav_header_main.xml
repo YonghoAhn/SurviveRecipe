@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageview_navHeaderMain_logo"
-        android:layout_width="@dimen/margin_extra_large"
-        android:layout_height="@dimen/margin_extra_large"
-        android:layout_marginStart="@dimen/margin_medium_large"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:src="@drawable/ic_baseline_menu_36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textview_navHeaderMain_title"
-        style="@style/TextAppearance.SurviveRecipe.Headline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_medium"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:text="Headline6"
-        app:layout_constraintStart_toEndOf="@+id/imageview_navHeaderMain_logo"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textview_navHeaderMain_detail"
-        style="@style/TextAppearance.SurviveRecipe.Body2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Body 2"
-        app:layout_constraintStart_toEndOf="@+id/imageview_navHeaderMain_logo"
-        app:layout_constraintTop_toBottomOf="@+id/textview_navHeaderMain_title" />
-
-    <View
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/colorLightGray"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerview_navHeaderMain_list"
-        app:layout_constraintTop_toBottomOf="@+id/imageview_navHeaderMain_logo" />
+        android:layout_height="wrap_content">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_navHeaderMain_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageview_navHeaderMain_logo" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_navHeaderMain_logo"
+            android:layout_width="@dimen/margin_extra_large"
+            android:layout_height="@dimen/margin_extra_large"
+            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_menu_36"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_navHeaderMain_title"
+            style="@style/TextAppearance.SurviveRecipe.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Headline6"
+            app:layout_constraintStart_toEndOf="@+id/imageview_navHeaderMain_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_navHeaderMain_detail"
+            style="@style/TextAppearance.SurviveRecipe.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Body 2"
+            app:layout_constraintStart_toEndOf="@+id/imageview_navHeaderMain_logo"
+            app:layout_constraintTop_toBottomOf="@+id/textview_navHeaderMain_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorLightGray"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerview_navHeaderMain_list"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_navHeaderMain_logo" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_navHeaderMain_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_navHeaderMain_logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

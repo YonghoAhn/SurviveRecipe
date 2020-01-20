@@ -2,20 +2,18 @@ package moe.misakachan.surviverecipe.util
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import moe.misakachan.surviverecipe.R
-import moe.misakachan.surviverecipe.databinding.CustomListviewBinding
-import moe.misakachan.surviverecipe.viewmodel.RecipeListViewModel
+import moe.misakachan.surviverecipe.databinding.ItemCardviewBinding
+import moe.misakachan.surviverecipe.viewmodel.ItemCardViewModel
 
-
-class MainRecyclerAdpater : RecyclerView.Adapter<BindingViewHolder<CustomListviewBinding>>() {
-    private val listItemViewModels: ArrayList<RecipeListViewModel> = ArrayList()
+class RecipeListRecyclerAdapter: RecyclerView.Adapter<BindingViewHolder<ItemCardviewBinding>>() {
+    private val listItemViewModels: ArrayList<ItemCardViewModel> = ArrayList()
 
     inner class ListItemDifferentCallback(
-        private val oldListItemViewModels: ArrayList<RecipeListViewModel>,
-        private val newListItemViewModels: ArrayList<RecipeListViewModel>
+        private val oldListItemViewModels: ArrayList<ItemCardViewModel>,
+        private val newListItemViewModels: ArrayList<ItemCardViewModel>
     ) : DiffUtil.Callback() {
         override fun getOldListSize(): Int {
             return oldListItemViewModels.size
@@ -26,22 +24,20 @@ class MainRecyclerAdpater : RecyclerView.Adapter<BindingViewHolder<CustomListvie
         }
 
         override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-            val oldItem: RecipeListViewModel = oldListItemViewModels[oldItemPosition]
-            val newItem: RecipeListViewModel = newListItemViewModels[newItemPosition]
+            val oldItem: ItemCardViewModel = oldListItemViewModels[oldItemPosition]
+            val newItem: ItemCardViewModel = newListItemViewModels[newItemPosition]
             return oldItem == newItem
         }
 
         override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-            val oldItem: RecipeListViewModel = oldListItemViewModels[oldItemPosition]
-            val newItem: RecipeListViewModel = newListItemViewModels[newItemPosition]
-            if(oldItem.getItem().recipe_id != newItem.getItem().recipe_id) return false
-            if(oldItem.getItem().name != newItem.getItem().name) return false
-            if(oldItem.getItem().theme != newItem.getItem().theme) return false
+            val oldItem: ItemCardViewModel = oldListItemViewModels[oldItemPosition]
+            val newItem: ItemCardViewModel = newListItemViewModels[newItemPosition]
+
             return true
         }
     }
 
-    fun updateItems(listItemViewModels: ArrayList<RecipeListViewModel>) {
+    fun updateItems(listItemViewModels: ArrayList<ItemCardViewModel>) {
         val callback = ListItemDifferentCallback(this.listItemViewModels, listItemViewModels)
         val result = DiffUtil.calculateDiff(callback)
         this.listItemViewModels.clear()
@@ -53,11 +49,11 @@ class MainRecyclerAdpater : RecyclerView.Adapter<BindingViewHolder<CustomListvie
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): BindingViewHolder<CustomListviewBinding> {
+    ): BindingViewHolder<ItemCardviewBinding> {
         val inflater = LayoutInflater.from(parent.context)
-        return BindingViewHolder<CustomListviewBinding>(
+        return BindingViewHolder<ItemCardviewBinding>(
             inflater.inflate(
-                R.layout.custom_listview,
+                R.layout.item_cardview,
                 parent,
                 false
             )
@@ -65,7 +61,7 @@ class MainRecyclerAdpater : RecyclerView.Adapter<BindingViewHolder<CustomListvie
     }
 
     override fun onBindViewHolder(
-        holder: BindingViewHolder<CustomListviewBinding>,
+        holder: BindingViewHolder<ItemCardviewBinding>,
         position: Int
     ) {
         holder.binding().vm = listItemViewModels[position]

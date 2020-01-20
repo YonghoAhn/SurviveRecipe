@@ -6,7 +6,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 data class Recipe(
-    var author_uid : Int = 0,
+    var author_uid : String = "",
     @ServerTimestamp var created_at : Date? = null,
     var id : Int = -1,
     var lovers : Int = 0,

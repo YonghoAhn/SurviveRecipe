@@ -1,56 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.RecipeProgressWithoutVideoFragment">
+<layout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        tools:context=".fragment.RecipeProgressWithoutVideoFragment">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            style="@style/ToolbarTextAppearance"
-            app:title="1단계"
-            app:layout_collapseMode="pin"
-            app:navigationIcon="?attr/homeAsUpIndicator"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-        </com.google.android.material.appbar.MaterialToolbar>
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/margin_extra_large"
-            android:layout_gravity="bottom"
-            android:layout_margin="10dp">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="1단계"></com.google.android.material.appbar.MaterialToolbar>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/button_recipeProgressWithoutVideo_prev"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorSecondary"
-                android:text="@string/previous"
-                android:textColor="@color/colorBlack"
-                app:cornerRadius="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_extra_large"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/button_recipeProgressWithoutVideo_next"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/next"
-                app:cornerRadius="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_recipeProgressWithoutVideo_prev"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorSecondary"
+                    android:text="@string/previous"
+                    android:textColor="@color/colorBlack"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_recipeProgressWithoutVideo_next"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</FrameLayout>
+    </FrameLayout>
+</layout>
