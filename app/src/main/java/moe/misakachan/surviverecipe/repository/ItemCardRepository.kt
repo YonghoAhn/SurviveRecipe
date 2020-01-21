@@ -11,7 +11,6 @@ import moe.misakachan.surviverecipe.viewmodel.RecipeListViewModel
 class ItemCardRepository {
     private var firestore = FirebaseFirestore.getInstance()
     var user = FirebaseAuth.getInstance().currentUser
-    var mainListViewItems: ObservableArrayList<RecipeListViewModel> = ObservableArrayList()
 
     fun getRecipeListbyTheme(theme:String): Query {
         return firestore.collection("recipe").whereArrayContains("theme",theme)

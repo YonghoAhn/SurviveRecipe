@@ -5,11 +5,14 @@
             name="vm"
             type="moe.misakachan.surviverecipe.viewmodel.ItemCardViewModel" />
     </data>
-    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         style="@style/CardView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:cardElevation="@dimen/margin_small"
+        app:cardUseCompatPadding="true"
         app:cardCornerRadius="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,7 +24,7 @@
                 android:id="@+id/imageview_cardview_cardimage"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 squareRecipeImage="@{vm.url}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
