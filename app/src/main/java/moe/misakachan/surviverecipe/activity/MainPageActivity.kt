@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.custom_listview.*
 import moe.misakachan.surviverecipe.R
 import moe.misakachan.surviverecipe.databinding.ActivityMainPageBinding
 import moe.misakachan.surviverecipe.util.MainRecyclerAdpater
+import moe.misakachan.surviverecipe.util.RecipeListRecyclerAdapter
+import moe.misakachan.surviverecipe.viewmodel.ItemCardViewModel
 import moe.misakachan.surviverecipe.viewmodel.MainViewModel
 import moe.misakachan.surviverecipe.viewmodel.RecipeListViewModel
 
@@ -33,16 +35,16 @@ fun setItems(
 @BindingAdapter("liveItems")
 fun setLiveItems(
     recyclerView: RecyclerView,
-    listItemViewModels: LiveData<ArrayList<RecipeListViewModel>>
+    listItemViewModels: ObservableArrayList<ItemCardViewModel>
 ) {
-    val adapter: MainRecyclerAdpater
+    val adapter: RecipeListRecyclerAdapter
     if (recyclerView.adapter == null) {
-        adapter = MainRecyclerAdpater()
+        adapter = RecipeListRecyclerAdapter()
         recyclerView.adapter = adapter
     } else {
-        adapter = recyclerView.adapter as MainRecyclerAdpater
+        adapter = recyclerView.adapter as RecipeListRecyclerAdapter
     }
-    adapter.updateItems(listItemViewModels.value!!)
+    adapter.updateItems(listItemViewModels)
 }
 
 class MainPageActivity : AppCompatActivity() {
@@ -52,12 +54,6 @@ class MainPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main_page)
         binding.viewModel = MainViewModel()
-        mainSwipeLayout.setOnRefreshListener {
-            var viewModel = binding.viewModel as MainViewModel
-            viewModel.refreshItems()
-            mainRecycler.adapter?.notifyDataSetChanged()
-            mainSwipeLayout.isRefreshing=false
-        }
     }
 
 

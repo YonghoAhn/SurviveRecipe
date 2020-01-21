@@ -45,6 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="horizontal"
+        liveItems="@{vm.recipeListViewItems}"
         app:layout_constraintTop_toBottomOf="@+id/textview_customlistitem_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
