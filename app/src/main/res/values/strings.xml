@@ -36,4 +36,8 @@
     <string name="next">다음</string>
     <string name="previous">이전</string>
     <string name="one_view_worth_na_thousand_words">One <b>View</b> Worth\nA Thousand <b>Words.</b></string>
+    <string name="user_account_info">자신을 소개해주세요.</string>
+    <string name="select_img">배경이미지 선택</string>
+    <string name="introduce">한줄 소개</string>
+    <string name="personal_info_terms">약관에 대한 이용 안내\n반준수 코퍼레이션\n해당 고객님의 모든 정보는 굳이 알지 않아도 전지전능하지 않은 준수가 그건 알고 있으며 만약 거부할시 C언어만 9학기를 듣게 되니 주의하시기 바랍니다 그럼 20000</string>
 </resources>
