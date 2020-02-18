@@ -28,6 +28,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="facebook_app_id">2475875292687672</string>
     <string name="fb_login_protocol_scheme">fb2475875292687672</string>
+    <string name="agree">동의</string>
+    <string name="disagree">거부</string>
 
     <string name="filter">필터</string>
     <string name="author">게시자</string>
@@ -40,4 +42,6 @@
     <string name="select_img">배경이미지 선택</string>
     <string name="introduce">한줄 소개</string>
     <string name="personal_info_terms">약관에 대한 이용 안내\n반준수 코퍼레이션\n해당 고객님의 모든 정보는 굳이 알지 않아도 전지전능하지 않은 준수가 그건 알고 있으며 만약 거부할시 C언어만 9학기를 듣게 되니 주의하시기 바랍니다 그럼 20000</string>
+    <string name="default_introduce">한줄소개 문구입니다</string>
+    <string name="default_name">USERNAME</string>
 </resources>

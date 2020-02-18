@@ -4,7 +4,10 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_h_main"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageview_navHeaderMain_logo"
@@ -41,9 +44,10 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/colorLightGray"
-            app:layout_constraintBottom_toTopOf="@+id/recyclerview_navHeaderMain_list"
+            app:layout_constraintBottom_toTopOf="@+id/navigation_view"
             app:layout_constraintTop_toBottomOf="@+id/imageview_navHeaderMain_logo" />
 
+        <!--
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview_navHeaderMain_list"
             android:layout_width="match_parent"
@@ -52,5 +56,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageview_navHeaderMain_logo" />
+         -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_navHeaderMain_logo"
+            app:menu="@menu/sheet_main_menu"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

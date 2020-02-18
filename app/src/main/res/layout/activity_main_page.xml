@@ -40,9 +40,9 @@
             style="@style/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_medium"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/margin_medium"
             android:hint="Search here..."
             app:boxBackgroundColor="@color/colorLightGray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,9 +51,12 @@
             app:layout_constraintTop_toBottomOf="@+id/textview_mainActi_title">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchEditText_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
                 android:drawableStart="@drawable/ic_search_black_24dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -67,12 +70,13 @@
         android:layout_gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
-        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-
+            android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                android:id="@+id/fragment_area_main">
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/mainRecycler"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -80,7 +84,8 @@
                     android:layout_height="match_parent"
                     app:items="@{viewModel.mainListViewItems}"
                     />
-        </androidx.core.widget.NestedScrollView>
+
+            </androidx.core.widget.NestedScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_main_addrecipe"
@@ -100,7 +105,7 @@
             android:backgroundTint="@color/colorPrimary"
             app:fabAlignmentMode="end"
             app:hideOnScroll="true"
-            app:menu="@menu/navigation" />
+            app:navigationIcon="@drawable/ic_baseline_menu_36" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

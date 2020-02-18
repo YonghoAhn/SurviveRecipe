@@ -1,5 +1,6 @@
 package moe.misakachan.surviverecipe.activity
 
+import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -11,6 +12,8 @@ import moe.misakachan.surviverecipe.R
 class SignUpActivity : AppCompatActivity() {
 
     private lateinit var firebaseAuth : FirebaseAuth
+    val builder = AlertDialog.Builder(this)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
