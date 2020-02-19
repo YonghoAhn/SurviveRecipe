@@ -44,4 +44,18 @@
     <string name="personal_info_terms">약관에 대한 이용 안내\n반준수 코퍼레이션\n해당 고객님의 모든 정보는 굳이 알지 않아도 전지전능하지 않은 준수가 그건 알고 있으며 만약 거부할시 C언어만 9학기를 듣게 되니 주의하시기 바랍니다 그럼 20000</string>
     <string name="default_introduce">한줄소개 문구입니다</string>
     <string name="default_name">USERNAME</string>
+    <string name="my_profile">내 프로필</string>
+    <string name="point_info">포인트 정보</string>
+    <string name="setting">설정</string>
+    <string name="point">Point.</string>
+    <string name="step">%d단계</string>
+
+
+    <!--changed by time main comment-->
+    <string name="time_morning_comment">아침을 먹는 것을 잊지 마세요!</string>
+    <string name="time_lunch_comment">맛있는 점심을 드셨나요?</string>
+    <string name="time_dinner_comment">즐거운 저녁식사 되시기 바랍니다.</string>
+    <string name="time_night_comment">야식은 몸에 해롭습니다.\n밤에 보는 요리도 그렇죠</string>
+
+
 </resources>
